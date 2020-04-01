@@ -141,6 +141,7 @@
 		<item>Sample rate: 32000</item>
 		<item>Sample rate: 44100</item>
 		<item>Sample rate: 48000</item>
+		<item>Sample rate: 96000</item>
 	</string-array>
 
 	<string-array name="bit_rates">

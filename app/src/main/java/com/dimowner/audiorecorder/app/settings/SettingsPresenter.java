@@ -87,6 +87,9 @@ public class SettingsPresenter implements SettingsContract.UserActionsListener {
 			case AppConstants.RECORD_SAMPLE_RATE_48000:
 				pos = 4;
 				break;
+			case AppConstants.RECORD_SAMPLE_RATE_96000:
+				pos = 5;
+				break;
 			case AppConstants.RECORD_SAMPLE_RATE_44100:
 			default:
 				pos = 3;
@@ -197,6 +200,9 @@ public class SettingsPresenter implements SettingsContract.UserActionsListener {
 				break;
 			case 4:
 				rate = AppConstants.RECORD_SAMPLE_RATE_48000;
+				break;
+			case 5:
+				rate = AppConstants.RECORD_SAMPLE_RATE_96000;
 				break;
 			case 3:
 			default:

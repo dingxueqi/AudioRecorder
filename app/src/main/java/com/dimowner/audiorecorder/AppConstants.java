@@ -76,6 +76,7 @@ public class AppConstants {
 	public final static int RECORD_SAMPLE_RATE_16000 = 16000;
 	public final static int RECORD_SAMPLE_RATE_32000 = 32000;
 	public final static int RECORD_SAMPLE_RATE_48000 = 48000;
+	public final static int RECORD_SAMPLE_RATE_96000 = 96000;
 
 	public final static int RECORD_ENCODING_BITRATE_24000 = 24000;
 	public final static int RECORD_ENCODING_BITRATE_48000 = 48000;

@@ -30,6 +30,8 @@ import java.util.TimerTask;
 
 import timber.log.Timber;
 
+import android.util.Log;
+
 import static com.dimowner.audiorecorder.AppConstants.RECORD_MAX_DURATION;
 import static com.dimowner.audiorecorder.AppConstants.VISUALIZATION_INTERVAL;
 
@@ -43,7 +45,7 @@ public class AudioRecorder implements RecorderContract.Recorder {
 	private boolean isPaused = false;
 	private Timer timerProgress;
 	private long progress = 0;
-
+	static final String TAG = "Dingxueqi";
 	private RecorderContract.RecorderCallback recorderCallback;
 
 	private static class RecorderSingletonHolder {
@@ -68,6 +70,7 @@ public class AudioRecorder implements RecorderContract.Recorder {
 	@Override
 	public void prepare(String outputFile, int channelCount, int sampleRate, int bitrate) {
 		recordFile = new File(outputFile);
+		Log.w(TAG,"channelCount=" + channelCount + "sampleRate= " + sampleRate + "bitrate=" + bitrate);
 		if (recordFile.exists() && recordFile.isFile()) {
 			recorder = new MediaRecorder();
 			recorder.setAudioSource(MediaRecorder.AudioSource.MIC);

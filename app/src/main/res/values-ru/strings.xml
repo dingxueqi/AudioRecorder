@@ -141,6 +141,7 @@
 		<item>Частота: 32000 Гц</item>
 		<item>Частота: 44100 Гц</item>
 		<item>Частота: 48000 Гц</item>
+		<item>Частота: 96000 Гц</item>
 	</string-array>
 
 	<string-array name="bit_rates">
